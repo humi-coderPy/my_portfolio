@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section>
+    <h2>My <span>Projects</span></h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="{% static 'images/project1.jpg' %}" alt="To-Do List">
+            <div class="info">
+                <h3>To-Do List</h3>
+                <p>A task management app built with python & Django</p>
+                <div class="project-links">
+                    <a href="{% static 'videos/project1.mp4' %}" target="_blank">Live Demo</a>
+                    <a href="https://github.com/humi-coderPy" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="{% static 'images/project2.jpg' %}" alt="Student Grade Management System">
+            <div class="info">
+                <h3>Student Grade Management System</h3>
+                <p>A Python system to record and manage student grades.</p>
+                <div class="project-links">
+                    <a href="{% static 'videos/project2.mp4' %}" target="_blank">Live Demo</a>
+                    <a href="https://github.com/humi-coderPy" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="{% static 'images/project3.jpg' %}" alt="Gym Fitness Website">
+            <div class="info">
+                <h3>Gym Fitness Website</h3>
+                <p>A fitness website built with HTML, CSS and JavaScript.</p>
+                <div class="project-links">
+                    <a href="{% static 'videos/project3.mp4' %}" target="_blank">Live Demo</a>
+                    <a href="https://github.com/humi-coderPy" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="{% static 'images/project4.jpg' %}" alt="Expense Tracker">
+            <div class="info">
+                <h3>Expense Tracker</h3>
+                <p>A Python app to track daily expenses and budgets.</p>
+                <div class="project-links">
+                    <a href="{% static 'videos/project4.mp4' %}" target="_blank">Live Demo</a>
+                    <a href="https://github.com/humi-coderPy" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="{% static 'images/project5.jpg' %}" alt="Random Quotes">
+            <div class="info">
+                <h3>Random Quotes</h3>
+                <p>An HTML, CSS and JavaScript random quotes generator.</p>
+                <div class="project-links">
+                    <a href="{% static 'videos/project5.mp4' %}" target="_blank">Live Demo</a>
+                    <a href="https://github.com/humi-coderPy" target="_blank"><i class="fab fa-github github-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
