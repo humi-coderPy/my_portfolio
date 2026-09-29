@@ -3,10 +3,17 @@
     {
       "src": "portfolio/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
+      "config": {
+        "excludeFiles": "{static/**,staticfiles/**,media/**}"
+      }
+    },
+    {
+      "src": "staticfiles/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
+    { "src": "/static/(.*)", "dest": "/staticfiles/$1" },
     { "src": "/(.*)", "dest": "portfolio/wsgi.py" }
   ]
 }
