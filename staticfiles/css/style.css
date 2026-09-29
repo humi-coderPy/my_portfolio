@@ -1,0 +1,83 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+
+body { background: #0f0c1d; color: #e5e7eb; overflow-x: hidden; }
+
+nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; background-color: #17132b; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #2e2650; }
+nav .logo { font-size: 22px; font-weight: 700; background: linear-gradient(90deg, #a855f7, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+nav ul { display: flex; list-style: none; gap: 35px; }
+nav ul li a { color: #e5e7eb; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+nav ul li a:hover { color: #f59e0b; }
+
+.hero { min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; background: radial-gradient(circle at top, #1c1638, #0f0c1d); }
+.hero h1 { font-size: 44px; color: #ffffff; }
+.hero span { background: linear-gradient(90deg, #a855f7, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero p { margin-top: 15px; font-size: 18px; color: #9ca3af; }
+
+.btn { display: inline-block; margin-top: 25px; padding: 12px 32px; background: linear-gradient(90deg, #a855f7, #f59e0b); color: #0f0c1d; text-decoration: none; border-radius: 30px; font-weight: 700; border: none; cursor: pointer; transition: transform 0.3s; }
+.btn:hover { transform: translateY(-3px); }
+
+section { padding: 80px 60px; }
+section h2 { font-size: 32px; color: #ffffff; margin-bottom: 40px; text-align: center; }
+section h2 span { color: #f59e0b; }
+
+.about-container { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; justify-content: center; }
+.about-container img { width: 260px; height: 260px; object-fit: cover; border-radius: 50%; border: 4px solid #a855f7; }
+.about-text { max-width: 600px; }
+.about-text p { line-height: 1.8; color: #9ca3af; margin-bottom: 20px; }
+.social-icons a { color: #e5e7eb; font-size: 24px; margin-right: 20px; display: inline-block; transition: color 0.3s; }
+.social-icons a:hover { color: #f59e0b; }
+
+/* ===== SKILLS - BIGGER CARDS ===== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.skill-card {
+    background: linear-gradient(160deg, #241c47, #17132b);
+    border: 1px solid #3d3170;
+    padding: 45px 50px;
+    border-radius: 18px;
+    text-align: center;
+    min-width: 170px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #f59e0b;
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.2);
+}
+.skill-card i {
+    font-size: 52px;
+    color: #c084fc;
+    margin-bottom: 18px;
+    display: block;
+}
+.skill-card p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.projects-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+.project-card { background: linear-gradient(160deg, #1c1638, #17132b); border: 1px solid #2e2650; border-radius: 14px; width: 320px; overflow: hidden; transition: transform 0.3s, border-color 0.3s; }
+.project-card:hover { transform: translateY(-6px); border-color: #a855f7; }
+.project-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+.project-card .info { padding: 20px; }
+.project-card h3 { color: #ffffff; margin-bottom: 10px; }
+.project-card p { color: #9ca3af; font-size: 14px; margin-bottom: 15px; }
+.project-links { display: flex; gap: 15px; align-items: center; }
+.project-links a { color: #f59e0b; text-decoration: none; font-weight: 600; font-size: 14px; }
+.project-links .github-icon { font-size: 20px; color: #e5e7eb; }
+
+.contact-container { max-width: 600px; margin: 0 auto; text-align: center; }
+.contact-info { margin-bottom: 30px; color: #9ca3af; }
+.contact-info p { margin: 5px 0; }
+form input, form textarea { width: 100%; padding: 14px; margin-bottom: 18px; background-color: #17132b; border: 1px solid #2e2650; border-radius: 8px; color: #ffffff; }
+form textarea { height: 130px; resize: none; }
+#form-message { margin-top: 15px; color: #a855f7; font-weight: 600; }
+
+footer { text-align: center; padding: 25px; background-color: #17132b; border-top: 1px solid #2e2650; color: #9ca3af; }
